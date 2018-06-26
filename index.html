@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="webgl-utils.js"></script>
+    <script type="text/javascript" src="shader-utils.js"></script>
+    <script type="text/javascript" src="render.js"></script>
+    <title>Colorful Sierpinski Gasket</title>
+</head>
+<body onload="main()">
+<DIV style="position: absolute; top:10px; left:10px;
+        width:400px; height:10px">Sam Carson's Homework 4 - Select 3 points to start</DIV>
+
+<DIV style="position: absolute; top:30px; left:10px;
+        width:400px; height:10px">Move the triangle with WASD</DIV>
+
+<DIV style="position: absolute; top:70px; left:10px;
+        width:50px; height:10px">Depth</DIV>
+
+<DIV style="position: absolute; top:70px; left:60px;
+        width:50px; height:10px"><input id="slider"type="range" min="0" max="10" step="1" value="3"></DIV>
+
+<DIV style="position: absolute; top:70px; left:200px;
+        width:50px; height:10px"><span id="depthSpan">3</span></DIV>
+
+<DIV style="position: absolute; top:70px; left:250px;
+        width:50px; height:10px"><button id="clearBtn">Clear</button></DIV>
+
+<DIV style="position: absolute; top:70px; left:320px;
+        width:50px; height:10px"><select id="menu">
+                <option value="0">Random Color</option>
+                <option value="1">Smooth Color Interpolation</option></select></DIV>
+
+<DIV style="position: absolute; top:100px; left:10px;
+width:512px; height:512px"><canvas id="my-canvas" height="512" width="512">
+    Your browser does not support &lt;canvas&gt;
+</canvas></DIV>
+
+</body>
+</html>
